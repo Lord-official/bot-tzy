@@ -19,9 +19,9 @@ const anu = {
 						"mimetype": "image/jpeg",
 						"jpegThumbnail": global.thumb
 					},
-					"title": "ＵｗＵ",
+					"title": "ʜᴇʜᴇ",
 					"description": "LORD",
-					"currencyCode": "USD",
+					"currencyCode": "INR",
 					"priceAmount1000": "999999999999",
 					"retailerId": ">//<",
 					"productImageCount": 1
@@ -32,37 +32,37 @@ const anu = {
 }
   itsu.relayWAMessage(itsu.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
-                        "title": "Ｍｅｎｕ ＴｅｓｔＢｏｔ",
+                        "title": "🅼︎🅴︎🅽︎🆄︎ 🆃︎🅴︎🆂︎🆃︎🅱︎🅾︎🆃︎",
                         "description": " \n_© 𝙻𝙾𝚁𝙳 2022_ ",
                         "buttonText": `Menu`,
                         "listType": "SINGLE_SELECT",
                         "sections": [
-                            { title: '『ＬｉｓｔＭｅｎｕ』',
+                            { title: '『𝗟𝗜𝗦𝗧 𝗠𝗘𝗡𝗨』',
                                 "rows": [
                                     {
-                                        "title": `『👥』- ʙᴏᴛ ɢʀᴏᴜᴘ `, "description":  ``,
+                                        "title": `『ʙᴏᴛ-ɢʀᴏᴜᴘ』`, "description":  ``,
                                         "rowId": `${usedPrefix}from`
                                     }, {
-                                       "title": `『⌛』-  ʀᴜɴᴛɪᴍᴇ` , "description": ``,
+                                       "title": `『ʀᴜɴᴛɪᴍᴇ』` , "description": ``,
                                        "rowId": `${usedPrefix}runtime`
                                     }, {
-                                       "title": `『👤』- ᴏᴡɴᴇʀ`,
+                                       "title": `『ᴏᴡɴᴇʀ』`,
 "description": ``, 
                                        "rowId": `${usedPrefix}owner`
                                     }, {
-                                       "title": `『⚙️』- SC `,
+                                       "title": `『sᴄ️』`,
 "description": ``, 
                                         "rowId": `${usedPrefix}sc`
                                     }, {
-                                        "title": `『📄』- ᴀʙᴏᴜᴛ `,
+                                        "title": `『ᴀʙᴏᴜᴛ️』`,
 "description": ``, 
                                         "rowId": `${usedPrefix}about`                               
                                     }, { 
-                                        "title": `『📱』- sᴛᴀᴛs`,
+                                        "title": `『sᴛᴀᴛᴜs』`,
 "description": ``, 
                                         "rowId": `${usedPrefix}stats`
                                     },{
-"title": `『⋮☰』- ᴍᴇɴᴜ`,
+"title": `『ᴍᴇɴᴜ』`,
 "description": ``, 
                                        "rowId": `${usedPrefix}404`}
                                 ]
@@ -71,7 +71,7 @@ const anu = {
                     }
                  }, {quoted: anu}),{waitForAck: true}
 )
-return itsu.sendMessage(m.chat, hisil, 'audioMessage', {mimetype: 'audio/mp4', quoted: m, ptt: true, duration: 4040404})
+return itsu.sendMessage(m.chat, hisil, 'audioMessage', {mimetype: 'audio/mp4', quoted: m, ptt: true, duration: 999999})
 }
 
 handler.help = ['menu','help','?']
