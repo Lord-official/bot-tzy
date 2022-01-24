@@ -40,7 +40,7 @@ if (!global.DATABASE.data.stats) global.DATABASE.data.stats = {}
 if (!global.DATABASE.data.stats) global.DATABASE.data.msgs = {}
 if (!global.DATABASE.data.sticker) global.DATABASE.data.sticker = {}
 global.itsu = new WAConnection()
-let authFile = `${opts._[0] || 'Rell'}.json`
+let authFile = `${opts._[0] || 'LOFC'}.json`
 if (fs.existsSync(authFile)) itsu.loadAuthInfo(authFile)
 if (opts['trace']) itsu.logger.level = 'trace'
 if (opts['debug']) itsu.logger.level = 'debug'
@@ -226,7 +226,7 @@ async function _quickTest() {
     magick,
     gm
   }
-  require('./lib/sticker').support = s
+  require('./lib/sticker').support  = s
   Object.freeze(global.support)
 
   if (!s.ffmpeg) itsu.logger.warn('Please install ffmpeg for sending videos (pkg install ffmpeg)')
