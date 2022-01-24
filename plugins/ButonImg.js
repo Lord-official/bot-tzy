@@ -1,10 +1,5 @@
-/*Merasa keren 😎
-jangan ganti wm ye
-buat susah bang
-thx to arif
-*/
 let handler  = async (m, { itsu, usedPrefix: _p }) => {
-  m.reply(' ```Loading...``` ')
+  m.reply(' ```Loading...🐦``` ')
   let fs = require('fs')
   let eror = 'https://telegra.ph/file/a2ae6cbfa40f6eeea0cf1.jpg'
   let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? eror : m.sender
@@ -17,16 +12,11 @@ let handler  = async (m, { itsu, usedPrefix: _p }) => {
   let ppBot = await itsu.getProfilePicture(itsu.user.jid)
   let yts = require('yt-search')
 let fetch = require('node-fetch')
-let tag = `@${m.sender.split('@')[0]} 🐦`
+let tag = `@${m.sender.split('@')[0]} `
  m, { contextInfo: { mentionedJid: itsu.parseMention(tag) }}
- let ow = `@${'6283820073017'.split('@')[0]}`
+ let ow = `@${'919778383987'.split('@')[0]}`
  m, { contextInfo: { mentionedJid: itsu.parseMention(tag) }}
- let pat1 = `@${'62813828362494'.split('@')[0]}`
- m, { contextInfo: { mentionedJid: itsu.parseMention(tag) }}
- let pat2 = `@${'6283801499848'.split('@')[0]}`
- m, { contextInfo: { mentionedJid: itsu.parseMention(tag) }}
- let pat3 = `@${'31687221333'.split('@')[0]}`
- m, { contextInfo: { mentionedJid: itsu.parseMention(tag) }}
+ let pat1 = `@${'919656459062'.split('@')[0]}`
 let uwu = global.thumb
 let jam = new Date
 let clock = jam.toLocaleTimeString('us')
@@ -113,9 +103,9 @@ const anu = {
                             itemCount : 999999999999,
                             itemCoun : 404,
                             surface : 404,
-                            message: `© ${itsu.user.name}\nSimple WhatsApp Bot`,
+                            message: `© ${itsu.user.name}\nWhatsApp Bot`,
                             orderTitle: 'B',
-                            thumbnail: await (await fetch(ppBot)).buffer(), 
+                             thumbnail: await (await fetch(ppBot)).buffer(), 
                             sellerJid: '0@s.whatsapp.net'
           
                           }
@@ -212,13 +202,13 @@ const anu = {
  User: %totalreg
  
 - Creator : ${ow}
-- Partner : ${pat1}\n${pat2}\n${pat3}
+- Partner : ${pat1}
 %readmore`
     let header = itsu.menu.header || ` ${moe} ┉┄┈┈┈ 『  %category  』 ┉┄┈┈┈ ` 
     let body   = itsu.menu.body   || '➠ %cmd%islimit'
     let footer = itsu.menu.footer || `›`.repeat(50) + '\n'
     let after  = itsu.menu.after  ||   (itsu.user.jid == global.itsu.user.jid ? '' : `Powered by https://wa.me/${global.itsu.user.jid.split`@`[0]}`) + `\n*%npmname@^%version*\n\`\`\`\%npmdesc\`\`\`` 
-    ' Recode by itsu '
+    ' Recode by lord '
     let _text  = before + '\n'
     for (let tag in groups) {
       _text += header.replace(/%category/g, tags[tag]) + '\n'
@@ -249,12 +239,12 @@ let img = global.thumb2
 const thumb = fs.readFileSync('./sis.jpeg')
 let msg = await itsu.prepareMessage("0@s.whatsapp.net", img, "imageMessage", {thumbnail: thumb})
 const buttons = [
-{buttonId: `/sc`, buttonText: {displayText: 'sc'}, type: 1},
+{buttonId: `/sc`, buttonText: {displayText: '𝚂𝙲'}, type: 1},
 
-{buttonId: `/owner`, buttonText: {displayText: 'owner'}, type: 1}
+{buttonId: `/owner`, buttonText: {displayText: '𝙾𝚆𝙽𝙴𝚁'}, type: 1}
 ]
 const buttonsMessage = {
-    contentText: `Ｈｉ ｕｓｅｒ\nᵢₘ  ${itsu.user.name} \n\n\n- Bot group: J3j8XFLPnOR0RI937C8Biu\n\n- Github : https://github.com/Rlxfly\n\n`,
+    contentText: `𝙷𝙸 𝚅𝚁𝙾\nᵢₘ  ${itsu.user.name} \n- Bot group: https://chat.whatsapp.com/C49rohR4rq7CuvfyCXSw6h\n- Github : https://github.com/Lord-official\n`,
     footerText: text,
     buttons: buttons,
     headerType: 4,
