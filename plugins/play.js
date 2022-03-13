@@ -1,6 +1,11 @@
 let limit = 30
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
+try {
+    pp = await conn.getProfilePicture(who)
+  } catch (e) {
+  }
+  let ppBot = await conn.getProfilePicture(conn.user.jid)
 let yts = require('yt-search')
 let fetch = require('node-fetch')
 const { servers, yta, ytv } = require('../lib/y2mate')
@@ -12,7 +17,7 @@ let handler = async (m, { itsu, command, text, isPrems, isOwner }) => {
   let isVideo = /2$/.test(command)
   let { dl_link, thumb, title, filesize, filesizeF} = await (isVideo ? ytv : yta)(vid.url, 'id4')
   let isLimit = (isPrems || isOwner ? 99 : limit) * 1024 < filesize
-  itsu.sendMessage(m.chat, `*Title:* ${title}\n*Size:* ${filesizeF}` , 'conversation', {quoted: m, thumbnail: global.thumb2, contextInfo:{externalAdReply: {title: 'Simple WhatsApp bot', body: `© ${itsu.user.name}`, sourceUrl: '', thumbnail: global.thumb}}})
+  itsu.sendMessage(m.chat, `*Title:* ${title}\n*Size:* ${filesizeF}` , 'conversation', {quoted: m, thumbnail: pp, contextInfo:{externalAdReply: {title: 'Simple WhatsApp bot', body: `© ${itsu.user.name}`, sourceUrl: '', thumbnail: pp}}})
   let _thumb = {}
   try { if (isVideo) _thumb = { thumbnail: await (await fetch(thumb)).buffer() } }
   catch (e) { }
